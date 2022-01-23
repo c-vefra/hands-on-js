@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Areas and Perimeters</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <p><a href="../index.html">Hands-On JS</a></p>
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="./areas.html">Areas and Perimeters</a></li>
+                    <li><a href="./discounts.html">Discounts</a></li>
+                    <li><a href="./statistics.html">Statistics</a></li>
+                    <li><a href="./salaries.html">Salaries</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="title">
+        <h1>Areas and Perimeters</h1>
+        <p>This is the first workshop from the hands-On JS course</p>
+    </section>
+
+    <section class="cards-section">
+        <section class="main-card">
+            <div class="card-title">
+                <h2>Calculations for a square</h2>
+                <p>Write the measures of the sides.</p>
+            </div>
+            <form class="card-form" action="">
+                <div class="card-form-info">
+                    <label class="card-form__label" for="input-square">Side</label>
+                    <input class="card-form__input" id="input-square" type="number">
+                    <p class="card-form__result" id="square-perimeter"></p>
+                    <p class="card-form__result" id="square-area"></p>
+                </div>
+                <div class="card-form-action">
+                    <button class="card-form__btn" type="button" onclick="calculatePerimeterSquare()">Calculate the perimeter</button>
+                    <button class="card-form__btn" type="button" onclick="calculateAreaSquare()">Calculate the area</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="main-card">
+            <div class="card-title">
+                <h2>Calculations for a circle</h2>
+                <p>Write the measure of the radio.</p>
+            </div>
+            <form class="card-form" action="">
+                <div class="card-form-info">
+                    <label class="card-form__label" for="input-circle">Radio</label>
+                    <input class="card-form__input" id="input-circle" type="number">
+                    <p class="card-form__result" id="circle-perimeter"></p>
+                    <p class="card-form__result" id="circle-area"></p>
+                </div>
+                <div class="card-form-action">
+                    <button class="card-form__btn" type="button" onclick="calculatePerimeterCircle()">Calculate the perimeter</button>
+                    <button class="card-form__btn" type="button" onclick="calculateAreaCircle()">Calculate the area</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="main-card">
+            <div class="card-title">
+                <h2>Calculations for a triangle</h2>
+                <p>Write the measures of the sides.</p>
+            </div>
+            <form class="card-form" action="">
+                <div class="card-form-info">
+                    <label class="card-form__label" for="input-triangle-s1">Side 1</label>
+                    <input class="card-form__input" id="input-triangle-s1" type="number">
+    
+                    <label class="card-form__label" for="input-triangle-s2">Side 2</label>
+                    <input class="card-form__input" id="input-triangle-s2" type="number">
+    
+                    <label class="card-form__label" for="input-triangle-b">Base</label>
+                    <input class="card-form__input" id="input-triangle-b" type="number">
+    
+                    <label class="card-form__label" for="input-triangle-h">Hight</label>
+                    <input class="card-form__input" id="input-triangle-h" type="number">
+
+                    <p class="card-form__result" id="triangle-perimeter"></p>
+                    <p class="card-form__result" id="triangle-area"></p>
+                </div>
+                <div class="card-form-action">
+                    <button class="card-form__btn" type="button" onclick="calculatePerimeterTriangle()">Calculate the perimeter</button>
+                    <button class="card-form__btn" type="button" onclick="calculateAreaTriangle()">Calculate the area</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="main-card">
+            <div class="card-title">
+                <h2>Calculations for an isosceles triangle</h2>
+                <p>Write the measures of the sides.</p>
+            </div>
+            <form class="card-form" action="">
+                <div class="card-form-info">
+                    <label class="card-form__label" for="input-isosceles-s1">Side 1</label>
+                    <input class="card-form__input" id="input-isosceles-s1" type="number">
+    
+                    <label class="card-form__label" for="input-isosceles-s2">Side 2</label>
+                    <input class="card-form__input" id="input-isosceles-s2" type="number">
+    
+                    <label class="card-form__label" for="input-isosceles-b">Base</label>
+                    <input class="card-form__input" id="input-isosceles-b" type="number">
+
+                    <p class="card-form__result" id="isosceles-height"></p>
+                </div>
+                <div class="card-form-action">
+                    <button class="card-form__btn" type="button" onclick="calculateHeightTriangle()">Calculate the hight</button>
+                </div>
+            </form>
+        </section>
+
+    </section>
+
+    <footer>
+        <p>Developed by César Velandia</p>
+    </footer>
+    <script src="../js/areas.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Salaries</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <p><a href="../index.html">Hands-On JS</a></p>
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="./areas.html">Areas and Perimeters</a></li>
+                    <li><a href="./discounts.html">Discounts</a></li>
+                    <li><a href="./statistics.html">Statistics</a></li>
+                    <li><a href="./salaries.html">Salaries</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="title">
+        <h1>Salaries analysis</h1>
+        <p>This is the fourth workshop from the hands-On JS course</p>
+    </section>
+
+    <section class="cards-section">
+        <section class="main-card">
+            <div class="card-title">
+                <h2>Salaries</h2>
+            </div>
+            <form class="card-form" action="">
+                <div class="card-form-info">
+                    <label class="card-form__label" for="input-name">Name:</label>
+                    <input class="card-form__input" id="input-name" type="text">
+                    <label class="card-form__label" for="input-salary">Salary:</label>
+                    <input class="card-form__input" id="input-salary" type="number">
+                    <p class="card-form__result" id="overall-mean"></p>
+                    <p class="card-form__result" id="top10-mean"></p>
+                </div>
+                <div class="card-form-action">
+                    <button class="card-form__btn" type="button" onclick="addData()">Add data</button>
+                    <button class="card-form__btn" type="button" onclick="dataAnalysis()">Data Analysis</button>
+                    <button class="card-form__btn" type="button" onclick="clearData()">Clear data</button>
+                </div>
+            </form>
+        </section>
+    </section>
+ 
+    <footer>
+        <p>Developed by César Velandia</p>
+    </footer>
+
+    <script src="../js/salaries_list.js"></script>
+    <script src="../js/salaries.js"></script>
+</body>
+</html>

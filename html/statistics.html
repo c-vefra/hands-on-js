@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Mean, median and mode</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <p><a href="../index.html">Hands-On JS</a></p>
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="./areas.html">Areas and Perimeters</a></li>
+                    <li><a href="./discounts.html">Discounts</a></li>
+                    <li><a href="./statistics.html">Statistics</a></li>
+                    <li><a href="./salaries.html">Salaries</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="title">
+        <h1>Mean, median and mode</h1>
+        <p>This is the third workshop from the hands-On JS course</p>
+    </section>
+
+    <section class="cards-section">
+        <section class="main-card">
+            <div class="card-title">
+                <h2>Calculate mean</h2>
+            </div>
+            <form class="card-form" action="">
+                <div class="card-form-info">
+                    <label class="card-form__label" for="input-mean">Add a number:</label>
+                    <input class="card-form__input" id="input-mean" type="number">
+                    <p class="card-form__result" id="list-mean"></p>
+                    <p class="card-form__result" id="result-mean"></p>
+                </div>
+                <div class="card-form-action">
+                    <button class="card-form__btn" type="button" onclick="addNumberMean()">Add number</button>
+                    <button class="card-form__btn" type="button" onclick="calculateMeanBtn()">Calculate the mean</button>
+                    <button class="card-form__btn" type="button" onclick="clearMean()">Clear mean</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="main-card">
+            <div class="card-title">
+                <h2>Calculate median</h2>
+            </div>
+            <form class="card-form" action="">
+                <div class="card-form-info">
+                    <label class="card-form__label" for="input-median">Add a number:</label>
+                    <input class="card-form__input" id="input-median" type="number">
+                    <p class="card-form__result" id="list-median"></p>
+                    <p class="card-form__result" id="result-median"></p>
+                </div>
+                <div class="card-form-action">
+                    <button class="card-form__btn" type="button" onclick="addNumberMedian()">Add number</button>
+                    <button class="card-form__btn" type="button" onclick="calculateMedianBtn()">Calculate the median</button>
+                    <button class="card-form__btn" type="button" onclick="clearMedian()">Clear median</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="main-card">
+            <div class="card-title">
+                <h2>Calculate mode</h2>
+            </div>
+            <form class="card-form" action="">
+                <div class="card-form-info">
+                    <label class="card-form__label" for="input-mode">Add a number:</label>
+                    <input class="card-form__input" id="input-mode" type="number">
+                    <p class="card-form__result" id="list-mode"></p>
+                    <p class="card-form__result" id="result-mode"></p>
+                </div>
+                <div class="card-form-action">
+                    <button class="card-form__btn" type="button" onclick="addNumberMode()">Add number</button>
+                    <button class="card-form__btn" type="button" onclick="calculateModeBtn()">Calculate the mode</button>
+                    <button class="card-form__btn" type="button" onclick="clearMode()">Clear mode</button>
+                </div>
+            </form>
+        </section>
+    </section>
+    
+    <footer>
+        <p>Developed by César Velandia</p>
+    </footer>
+
+    <script src="../js/statistics.js"></script>
+</body>
+</html>

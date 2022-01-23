@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Percentages and Discounts</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <p><a href="../index.html">Hands-On JS</a></p>
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="./areas.html">Areas and Perimeters</a></li>
+                    <li><a href="./discounts.html">Discounts</a></li>
+                    <li><a href="./statistics.html">Statistics</a></li>
+                    <li><a href="./salaries.html">Salaries</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="title">
+        <h1>Percentages and Discounts</h1>
+        <p>This is the second workshop from the hands-On JS course</p>
+    </section>
+
+    <section class="cards-section">
+        <section class="main-card">
+            <div class="card-title">
+                <h2>Calculate the price to pay for your products</h2>
+            </div>
+            <form class="card-form" action="">
+                <div class="card-form-info">
+                    <label class="card-form__label" for="input-price">Write the price:</label>
+                    <input class="card-form__input" id="input-price" type="number">
+                    <label class="card-form__label" for="input-discount">Apply your coupon here:</label>
+                    <input class="card-form__input" id="input-discount" type="text">
+                    <p class="card-form__result" id="final-price"></p>
+                </div>
+                <div class="card-form-action">
+                    <button class="card-form__btn" type="button" onclick="calculatePriceBtn()">Calculate the price</button>
+                </div>
+            </form>
+        </section>
+    </section>
+    
+    <footer>
+        <p>Developed by César Velandia</p>
+    </footer>
+
+    <script src="../js/discounts.js"></script>
+</body>
+</html>
